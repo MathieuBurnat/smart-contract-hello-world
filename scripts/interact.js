@@ -23,7 +23,7 @@ async function main() {
     console.log(`The message is : ${message}`);
 
     console.log("updating the message...");
-    const tx = await helloWorldContract.update("this is the new message");
+    const tx = await helloWorldContract.update("Hello there ! (again) I");
     await tx.wait();
 
     message = await helloWorldContract.message();
