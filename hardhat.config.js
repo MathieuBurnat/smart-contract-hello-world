@@ -1,6 +1,7 @@
 require("@nomicfoundation/hardhat-toolbox");
 require('dotenv').config();
 require('@nomiclabs/hardhat-ethers')
+require("@nomiclabs/hardhat-etherscan");
 
 const { alchemy_api_url, wallet_private_key } = process.env;
 

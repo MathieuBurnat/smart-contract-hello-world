@@ -19,4 +19,6 @@ npm install --save-dev hardhat
 npm install dotenv --save
 
 npm install --save-dev @nomiclabs/hardhat-ethers 'ethers@^5.0.0'
+
+npm install --save-dev @nomiclabs/hardhat-etherscan
 ```
