@@ -18,16 +18,16 @@ const signer = new ethers.Wallet(wallet_private_key, alchemyProvider);
 const helloWorldContract = new ethers.Contract(contract_address, contract.abi, signer);
 
 async function main() {
-    // get the public variable from the smart contract
-    var message = await helloWorldContract.message();
-    console.log(`The message is : ${message}`);
+  // get the public variable from the smart contract
+  var message = await helloWorldContract.message();
+  console.log(`The message is : ${message}`);
 
-    console.log("updating the message...");
-    const tx = await helloWorldContract.update("Hello there ! (again) I");
-    await tx.wait();
+  console.log("updating the message...");
+  const tx = await helloWorldContract.update("Here we go again!");
+  await tx.wait();
 
-    message = await helloWorldContract.message();
-    console.log(`The message is : ${message}`);
+  message = await helloWorldContract.message();
+  console.log(`The message is : ${message}`);
 }
 
 main().catch((error) => {

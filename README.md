@@ -9,7 +9,11 @@ npx hardhat help
 npx hardhat test
 REPORT_GAS=true npx hardhat test
 npx hardhat node
+# deploy
 npx hardhat run scripts/deploy.js
+
+# or interact with the contract
+npx hardhat run scripts/interact.js
 ```
 
 # install depedences
@@ -25,6 +29,6 @@ npm install --save-dev @nomiclabs/hardhat-etherscan
 
 # project information 
 
-The smart contract address is `0x54fFd727BFD83b0f22d9aeE6785a12037a04E34B`.
+The smart contract address is `0x2f717B3a99D44956f18e1785d7F9cbCA8c2Bf4a0`.
 
-The contract is available [here](https://goerli.etherscan.io/address/0x54ffd727bfd83b0f22d9aee6785a12037a04e34b#code) !
+The contract is available [here](https://goerli.etherscan.io/address/0x2f717B3a99D44956f18e1785d7F9cbCA8c2Bf4a0#code) !
